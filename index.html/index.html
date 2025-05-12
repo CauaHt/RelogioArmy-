@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffe6f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #d63384;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        #mensagem {
+            margin-top: 20px;
+            font-size: 22px;
+            color: green;
+            display: none;
+        }
+
+        #erro {
+            color: red;
+            font-weight: bold;
+        }
+
+        #expressao {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio</h1>
+    <p>Resolva esta conta para descobrir sua mensagem:</p>
+    <div id="expressao">
+        <p>
+            { [ (2⁴ + 3³) × (6 − 2)² ÷ (√144 − 6) + (18 ÷ 3 + 2)² ] ÷ 4 } + (25 − 12 + 1) ÷ 2 = ?
+        </p>
+    </div>
+
+    <input type="number" id="resposta" placeholder="Sua resposta aqui" />
+    <button onclick="verificarResposta()">Enviar</button>
+
+    <p id="erro"></p>
+    <div id="mensagem">🎉 Parabéns, <br> eu mesmo demorei pra criar ,pq eu tava me perdendo toda hora ,mas vc é
+        inteligente demais ..eu sempre confiei
+        cara .. eu so queria agradecer mesmo por voce me aturar todo santo dia, vc meio que faz parte do meu dia a dia
+        e te falar..voce tem o dom tá? pq eu sou meio leso da cabeça slk. tanto assunto meia bomba KKK mas ne.. serio
+        agora.. a gente vai naquele barzinho ? temos que ir em
+        e outra.. os mlks querem ir no repa..vc teria coragi?..era so isso mesmo ;;;;;, valeu por encarar essas minhas
+        doideiras KKKKKKKKKte amo viu ?!!💖</div>
+
+    <script>
+        let tentativas = 0;
+        const respostaCorreta = 31;
+
+        function verificarResposta() {
+            const input = parseInt(document.getElementById("resposta").value);
+            const erro = document.getElementById("erro");
+            const mensagem = document.getElementById("mensagem");
+
+            if (input === respostaCorreta) {
+                erro.textContent = "";
+                mensagem.style.display = "block";
+            } else {
+                tentativas++;
+                mensagem.style.display = "none";
+
+                if (tentativas >= 3) {
+                    erro.textContent = `Você errou 3 vezes 😢 A resposta correta é ${respostaCorreta}`;
+                } else {
+                    erro.textContent = `Oops! Tente de novo (Tentativas: ${tentativas})`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
