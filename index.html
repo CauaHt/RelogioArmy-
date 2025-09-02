@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitoramento de Enchentes - Belém</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <i class="fas fa-tint"></i>
+          <h1>MonitoraBelém</h1>
+        </div>
+
+        <nav class="nav desktop-nav">
+          <a href="#home">Início</a>
+          <a href="#mapa">Mapa</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#home">Início</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Monitoramento de Enchentes em Belém</h2>
+          <p>Sistema inteligente de monitoramento e alerta para enchentes e alagamentos na cidade de Belém, Pará.
+            Informações em tempo real para proteger você e sua família.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">
+              <i class="fas fa-map-marker-alt"></i>
+              Ver Mapa Interativo
+            </button>
+            <button class="btn btn-secondary">
+              Baixar App
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="imagens/enchentes 1.jpg" alt="Enchente em Belém">
+          <div class="alert-badge">
+            <i class="fas fa-exclamation-triangle"></i>
+            Alerta Ativo
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon blue">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>15.2K</h3>
+          <p>Usuários Ativos</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon green">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>127</h3>
+          <p>Pontos Monitorados</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon orange">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3>3.4K</h3>
+          <p>Alertas Enviados</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon purple">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>50K+</h3>
+          <p>Vidas Protegidas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="alerts">
+    <div class="container">
+      <h2>Alertas em Tempo Real</h2>
+      <div class="alerts-container">
+        <div class="alert-item high">
+          <div class="alert-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="alert-text">
+              <strong>Centro de Belém</strong> - Risco alto de alagamento nas próximas 2 horas
+            </div>
+            <span class="alert-time">Há 15 minutos</span>
+          </div>
+        </div>
+        <div class="alert-item medium">
+          <div class="alert-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="alert-text">
+              <strong>Bairro da Pedreira</strong> - Chuva intensa prevista para as próximas horas
+            </div>
+            <span class="alert-time">Há 30 minutos</span>
+          </div>
+        </div>
+        <div class="alert-item low">
+          <div class="alert-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div class="alert-text">
+              <strong>Nazaré</strong> - Condições meteorológicas estáveis
+            </div>
+            <span class="alert-time">Há 1 hora</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="mapa" class="map-section">
+    <div class="container">
+      <h2>Mapa Interativo de Belém</h2>
+      <div class="map-container">
+        <div class="map-overlay">
+          <img src="assets/SJr1GfqNaSJ7" alt="Mapa de Belém">
+          <div class="map-content">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Mapa Interativo</h3>
+            <p>Clique para visualizar o mapa completo</p>
+            <button class="btn btn-primary">Abrir Mapa Completo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="funcionalidades" class="features">
+    <div class="container">
+      <h2>Funcionalidades</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Mapa Interativo</h3>
+          <p>Visualize áreas de risco, níveis de água em tempo real e pontos de alagamento reportados pelos usuários.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+          </div>
+          <h3>Alertas e Notificações</h3>
+          <p>Receba notificações push sobre riscos iminentes de enchente nas suas áreas de interesse.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Relatos da Comunidade</h3>
+          <p>Contribua com informações sobre alagamentos e problemas de drenagem com fotos e localização.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Previsão de Marés</h3>
+          <p>Acompanhe as previsões de marés e chuvas para planejar suas atividades com segurança.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Rotas Seguras</h3>
+          <p>Encontre rotas alternativas para evitar áreas alagadas e chegue ao seu destino com segurança.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Suporte 24/7</h3>
+          <p>Acesso a informações de emergência, abrigos temporários e pontos de apoio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2>Sobre o Projeto</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>O Problema</h3>
+          <p>Belém enfrenta constantes problemas com enchentes e alagamentos, agravados por chuvas intensas, marés
+            altas, urbanização desordenada e infraestrutura de drenagem inadequada.</p>
+
+          <h3>Nossa Solução</h3>
+          <p>Desenvolvemos um sistema digital de monitoramento que oferece dados atualizados e acessíveis para toda a
+            população, melhorando a capacidade de resposta da cidade a eventos climáticos extremos.</p>
+
+          <div class="badges">
+            <span class="badge">Tempo Real</span>
+            <span class="badge">Dados Precisos</span>
+            <span class="badge">Fácil Acesso</span>
+            <span class="badge">Comunidade</span>
+          </div>
+        </div>
+        <div class="about-images">
+          <img src="imagens/enchentes 2.jpg" alt="Alagamento em Belém">
+          <img src="imagens/enchentes 3.png" alt="Monitoramento de enchentes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="public-target">
+    <div class="container">
+      <h2>Público-Alvo</h2>
+      <div class="target-grid">
+        <div class="target-card">
+          <div class="target-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>População em Geral</h3>
+          <p>Moradores de Belém, especialmente em áreas de risco, para receber alertas e traçar rotas seguras.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Órgãos Governamentais</h3>
+          <p>Defesa Civil, prefeituras e secretarias para monitoramento e gestão de emergências.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>ONGs e Voluntários</h3>
+          <p>Organizações para coordenar ações de apoio e socorro às comunidades afetadas.</p>
+        </div>
+        <div class="target-card">
+          <div class="target-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Pesquisadores</h3>
+          <p>Estudantes e pesquisadores para análise de dados e desenvolvimento de soluções inovadoras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="contato" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-tint"></i>
+            <h3>MonitoraBelém</h3>
+          </div>
+          <p>Sistema de monitoramento de enchentes para proteger a população de Belém.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> contato@monitorbelem.com.br</p>
+            <p><i class="fas fa-phone"></i> (91) 3333-4444</p>
+            <p><i class="fas fa-map-marker-alt"></i> Belém, Pará, Brasil</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Equipe</h4>
+          <div class="team-info">
+            <p>Cauã Tadeu</p>
+            <p>Ruan Brandão</p>
+            <p>Caio Melo</p>
+            <p>Bruno Oliveira</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MonitorBelém. Todos os direitos reservados.</p>
+        <p>Universidade da Amazônia - Disciplina: UX/UI Design</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
